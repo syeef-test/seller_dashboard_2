@@ -4,7 +4,7 @@ const ProductForm = ({ addProduct }) => {
   const [id, setId] = useState("");
   const [price, setPrice] = useState("");
   const [product_name, setProductName] = useState("");
-  const [category, setCategory] = useState("electronics");
+  const [category, setCategory] = useState("Electronics");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -42,9 +42,9 @@ const ProductForm = ({ addProduct }) => {
         onChange={(e) => setProductName(e.target.value)}
       />
       <select value={category} onChange={(e) => setCategory(e.target.value)}>
-        <option value="electronics">Electronics</option>
-        <option value="food">Foods</option>
-        <option value="skincare">Skincare</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Foods">Foods</option>
+        <option value="Skincare">Skincare</option>
       </select>
       <button type="submit">Add Product</button>
     </form>
