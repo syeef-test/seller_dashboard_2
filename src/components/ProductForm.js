@@ -18,7 +18,7 @@ const ProductForm = ({ addProduct }) => {
     setId("");
     setPrice("");
     setProductName("");
-    setCategory("electronics");
+    setCategory("Electronics");
   };
 
   return (
